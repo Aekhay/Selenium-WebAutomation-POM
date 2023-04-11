@@ -44,16 +44,14 @@ public class LoginPageTest extends TestBase{
 	}
 	
 	@Test (priority = 1)
-	public void loginTest() {
+	public void loginTest() throws InterruptedException {
 		
 		homePage = loginPage.Login(prop.getProperty("username"), prop.getProperty("password")); //returning object of homepage class
 		
 		
 	}
 	
-	
-	
-	
+
 	
 	@AfterMethod
 	public void tearDown() {

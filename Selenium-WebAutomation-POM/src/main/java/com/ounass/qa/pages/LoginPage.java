@@ -52,14 +52,14 @@ public class LoginPage extends TestBase{
 		return Applebtn.isDisplayed();
 	}
 	
-	public HomePage Login(String mail, String pass) {
+	public HomePage Login(String mail, String pass) throws InterruptedException {
 		
 		pushnotifibtn.click();
 		Accountopen.click();
 		email.sendKeys(mail); 
 		password.sendKeys(pass);
 		loginbtn.click();
-		
+		Thread.sleep(3000);
 		return new HomePage();
 		
 	}

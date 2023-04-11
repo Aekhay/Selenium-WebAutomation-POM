@@ -9,6 +9,7 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.ounass.qa.util.TestUtil;
 
@@ -16,6 +17,7 @@ public class TestBase {
 
 	public static WebDriver driver; //public -> can be used in child classes
 	public static Properties prop;
+	public static WebDriverWait wait;
 
 	public TestBase() {
 
