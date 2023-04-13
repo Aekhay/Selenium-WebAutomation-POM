@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ounass.qa.testcases.LoginPageTest">
+      <class name="com.ounass.qa.testcases.WishlistPageTest">
         <methods>
+          <include name="verifyWishlistTitleTest"/>
+          <include name="verifyWishlistitemTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="loginbtnTest"/>
         </methods>
-      </class> <!-- com.ounass.qa.testcases.LoginPageTest -->
+      </class> <!-- com.ounass.qa.testcases.WishlistPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
